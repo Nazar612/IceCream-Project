@@ -14,6 +14,30 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: dmSansRegular;
+  src: url(../../assets/fonts/DMSans-VariableFont.ttf) format(Truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: dmSansMedium;
+  src: url(../../assets/fonts/DMSans-VariableFont.ttf) format(Truetype);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: dmSansBold;
+  src: url(../../assets/fonts/DMSans-VariableFont.ttf) format(Truetype);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: TitanOneRegular;
+  src: url(../../assets/fonts/TitanOne-Regular.ttf) format(Truetype);
+  font-weight: 400;
+  font-style: normal;
+}
 .header {
   width: 1300px;
   top: 38px;
@@ -49,7 +73,7 @@ a {
 }
 
 .header-btn-text {
-  font-family: DM Sans;
+  font-family: dmSansRegular;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
@@ -76,7 +100,7 @@ a {
 .header-list-a {
   display: block;
   text-decoration: none;
-  font-family: "DM Sans";
+  font-family: dmSansRegular;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -97,11 +121,19 @@ a {
   width: 110px;
 }
 
+.header-button-div {
+  margin-top: 25px;
+  gap: 15px;
+  display: flex;
+}
+
 .hero {
-  background-image: url(../../assets/img/desktop/background-image/header-and-hero-background-img1x.png);
+  position: relative;
+  z-index: -2;
+  background-color: #ffb8ca;
   padding-top: 108px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .hero-container {
@@ -116,7 +148,7 @@ a {
 }
 
 .hero-h1-span1 {
-  font-family: "Titan One";
+  font-family: TitanOneRegular;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
@@ -127,7 +159,7 @@ a {
 }
 
 .hero-h1-span2 {
-  font-family: "Titan One";
+  font-family: TitanOneRegular;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -138,7 +170,7 @@ a {
 }
 
 .hero-btn-red {
-  font-family: "DM Sans";
+  font-family: dmSansRegular;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -156,7 +188,7 @@ a {
   width: 138px;
   height: 40px;
   /* How it’s made? */
-  font-family: "DM Sans";
+  font-family: dmSansRegular;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -168,21 +200,99 @@ a {
   border-radius: 20px;
 }
 
-.header-button-div {
-  margin-top: 25px;
-  gap: 15px;
-  display: flex;
-}
-
 .hero-img-milk {
   margin-top: 56px;
 }
 
 .hero-p {
-  font-family: "DM Sans";
+  margin-top: 112px;
+  font-family: dmSansRegular;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+  color: #ffffff;
+}
+
+.img-p-objednalka {
+  display: flex;
+}
+
+.hero-img-arrow {
+  margin-top: 20px;
+}
+
+.header-img-girl {
+  right: 110px;
+  bottom: 0;
+  position: absolute;
+}
+
+.header-img-icecream {
+  left: 1100px;
+  bottom: 0;
+  position: absolute;
+}
+
+.big-kolo {
+  z-index: -1;
+  position: absolute;
+  background-color: #ffa5ba;
+  width: 538px;
+  height: 538px;
+  border-radius: 50%;
+}
+
+.hero-list-div {
+  z-index: -1;
+  position: absolute;
+  background-color: #ffffff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.hero-list-div1 {
+  z-index: -1;
+  position: absolute;
+  background-color: #ffffff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.hero-list-number {
+  font-family: TitanOneRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  color: #d41443;
+}
+
+.hero-list-text {
+  font-family: dmSansRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.hero-list-number1 {
+  font-family: TitanOneRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  color: #d41443;
+}
+
+.hero-list-text1 {
+  font-family: dmSansRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
 }
