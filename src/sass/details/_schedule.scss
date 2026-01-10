@@ -1,0 +1,127 @@
+.card {
+  background: #fff;
+  width: 330px;
+  height: 572px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 4%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.pcafe {
+  background-color: #f0d1a5;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: #ffffff;
+  letter-spacing: 4%;
+}
+
+.pfoodtruck {
+  background-color: #c2e297;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: #ffffff;
+  letter-spacing: 4%;
+}
+
+.pgray {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: #907e82;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+
+.pcard {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: #000000;
+  letter-spacing: 4%;
+  margin-bottom: 10px;
+}
+
+.spanpink {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: #ffa5ba;
+  letter-spacing: 0%;
+  display: block;
+  margin-top: 4px;
+}
+
+hr {
+  border: none;
+  width: 234px;
+  height: 1px;
+  border-top: 1px solid #eee;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.flexbox {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 86px;
+}
+
+.ourlocation {
+  width: 198px;
+  height: 44px;
+  background-color: #d41342;
+  color: #ffffff;
+  border: none;
+  border-radius: 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.franchise {
+  width: 180px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #d41342;
+  border: none;
+  border-radius: 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
