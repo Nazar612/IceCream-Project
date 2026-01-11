@@ -127,6 +127,17 @@ a {
   display: flex;
 }
 
+.big-kolo {
+  z-index: -1;
+  right: 300px;
+  top: 0;
+  position: absolute;
+  background-color: #ffa5ba;
+  width: 538px;
+  height: 538px;
+  border-radius: 50%;
+}
+
 .hero {
   position: relative;
   z-index: -2;
@@ -230,23 +241,16 @@ a {
 }
 
 .header-img-icecream {
+  z-index: 1;
   left: 40%;
   bottom: 0;
   position: absolute;
 }
 
-.big-kolo {
-  display: none;
-  top: 0;
-  z-index: -1;
-  position: absolute;
-  background-color: #ffa5ba;
-  width: 538px;
-  height: 538px;
-  border-radius: 50%;
-}
-
 .hero-list-div {
+  top: 0;
+  right: 0;
+  position: absolute;
   z-index: -1;
   background-color: #ffffff;
   width: 33px;
@@ -254,7 +258,24 @@ a {
   border-radius: 50%;
 }
 
+.hero-list-li {
+  position: relative;
+}
+
+.hero-list-div11 {
+  width: 75px;
+  height: 100px;
+}
+
+.hero-list-div22 {
+  width: 75px;
+  height: 100px;
+}
+
 .hero-list-div1 {
+  top: 0;
+  right: 0;
+  position: absolute;
   z-index: -1;
   background-color: #ffffff;
   width: 33px;
@@ -279,6 +300,7 @@ a {
 }
 
 .hero-list-text {
+  text-align: center;
   font-family: dmSansRegular;
   font-style: normal;
   font-weight: 400;
@@ -288,6 +310,7 @@ a {
 }
 
 .hero-list-number1 {
+  position: relative;
   font-family: TitanOneRegular;
   font-style: normal;
   font-weight: 400;
@@ -297,6 +320,7 @@ a {
 }
 
 .hero-list-text1 {
+  text-align: center;
   font-family: dmSansRegular;
   font-style: normal;
   font-weight: 400;
