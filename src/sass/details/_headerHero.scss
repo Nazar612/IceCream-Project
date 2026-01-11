@@ -83,6 +83,7 @@
   background-size: cover;
 }
 .hero-container {
+  position: relative;
   width: 1083px;
   padding-left: 15px;
   padding-right: 15px;
@@ -160,16 +161,18 @@
   margin-top: 20px;
 }
 .header-img-girl {
-  right: 110px;
+  right: 120px;
   bottom: 0;
   position: absolute;
 }
 .header-img-icecream {
-  left: 1100px;
+  left: 40%;
   bottom: 0;
   position: absolute;
 }
 .big-kolo {
+  display: none;
+  top: 0;
   z-index: -1;
   position: absolute;
   background-color: #ffa5ba;
@@ -179,7 +182,6 @@
 }
 .hero-list-div {
   z-index: -1;
-  position: absolute;
   background-color: #ffffff;
   width: 33px;
   height: 33px;
@@ -187,11 +189,17 @@
 }
 .hero-list-div1 {
   z-index: -1;
-  position: absolute;
   background-color: #ffffff;
   width: 33px;
   height: 33px;
   border-radius: 50%;
+}
+.hero-list {
+  top: 0;
+  right: 0;
+  right: 100px;
+
+  position: absolute;
 }
 .hero-list-number {
   font-family: TitanOneRegular;
