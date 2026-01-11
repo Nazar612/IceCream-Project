@@ -39,7 +39,6 @@ a {
   font-style: normal;
 }
 .header {
-  width: 1300px;
   top: 38px;
   left: 50%;
   transform: translateX(-50%);
@@ -47,6 +46,7 @@ a {
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-right: 110px;
 }
 
 .header-logo {
@@ -57,6 +57,11 @@ a {
 
 .header-nav {
   margin-right: 110px;
+}
+@media (max-width: 1199px) {
+  .header-nav {
+    display: none;
+  }
 }
 
 .header-nav-list {
@@ -153,6 +158,11 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .hero-container {
+    width: 700px;
+  }
 }
 
 .hero-h1 {

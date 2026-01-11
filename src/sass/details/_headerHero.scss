@@ -1,5 +1,4 @@
 .header {
-  width: 1300px;
   top: 38px;
   left: 50%;
   transform: translateX(-50%);
@@ -7,6 +6,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-right: 110px;
 }
 .header-logo {
   margin-right: 110px;
@@ -15,6 +15,9 @@
 }
 .header-nav {
   margin-right: 110px;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 .header-nav-list {
   width: 541px;
@@ -98,6 +101,10 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media (max-width: 1199px) {
+    width: 700px;
+  }
 }
 .hero-h1 {
   margin-top: 86px;
