@@ -48,6 +48,13 @@ a {
   display: flex;
   margin-right: 110px;
 }
+@media (max-width: 1199px) {
+  .header {
+    transform: translateX(0);
+    left: 34px;
+    right: 34px;
+  }
+}
 
 .header-logo {
   margin-right: 110px;
