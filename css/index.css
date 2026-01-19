@@ -39,6 +39,7 @@ a {
   font-style: normal;
 }
 .header {
+  z-index: 1;
   top: 38px;
   left: 50%;
   transform: translateX(-50%);
@@ -53,6 +54,7 @@ a {
     transform: translateX(0);
     left: 34px;
     right: 34px;
+    margin-right: 0px;
   }
 }
 
@@ -61,6 +63,12 @@ a {
   width: 199px;
   height: 50px;
 }
+@media (max-width: 1199px) {
+  .header-logo {
+    transform: translateX(0);
+    margin-right: 291px;
+  }
+}
 
 .header-nav {
   margin-right: 110px;
@@ -68,6 +76,18 @@ a {
 @media (max-width: 1199px) {
   .header-nav {
     display: none;
+  }
+}
+
+.header-burger {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .header-burger {
+    display: block;
+    width: 30px;
+    height: 40px;
+    margin-right: 30px;
   }
 }
 
@@ -140,19 +160,24 @@ a {
 }
 
 .big-kolo {
-  z-index: -1;
-  right: 300px;
-  top: 0;
+  z-index: 0;
+  right: 500px;
+  top: 52px;
   position: absolute;
   background-color: #ffa5ba;
   width: 538px;
   height: 538px;
   border-radius: 50%;
 }
+@media (max-width: 1199px) {
+  .big-kolo {
+    top: 31px;
+    right: 137px;
+  }
+}
 
 .hero {
   position: relative;
-  z-index: -2;
   background-color: #ffb8ca;
   padding-top: 108px;
   background-repeat: no-repeat;
@@ -256,19 +281,24 @@ a {
   bottom: 0;
   position: absolute;
 }
+@media (max-width: 1199px) {
+  .header-img-girl {
+    right: 0;
+  }
+}
 
 .header-img-icecream {
-  z-index: 1;
+  z-index: -1;
   left: 40%;
   bottom: 0;
   position: absolute;
 }
 
 .hero-list-div {
+  z-index: 1;
   top: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
   background-color: #ffffff;
   width: 33px;
   height: 33px;
@@ -290,10 +320,10 @@ a {
 }
 
 .hero-list-div1 {
+  z-index: 1;
   top: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
   background-color: #ffffff;
   width: 33px;
   height: 33px;
@@ -303,11 +333,12 @@ a {
 .hero-list {
   top: 0;
   right: 0;
-  right: 100px;
   position: absolute;
 }
 
 .hero-list-number {
+  z-index: 2;
+  position: relative;
   font-family: TitanOneRegular;
   font-style: normal;
   font-weight: 400;
@@ -327,6 +358,7 @@ a {
 }
 
 .hero-list-number1 {
+  z-index: 2;
   position: relative;
   font-family: TitanOneRegular;
   font-style: normal;
