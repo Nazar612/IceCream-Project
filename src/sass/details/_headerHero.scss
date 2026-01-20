@@ -9,10 +9,6 @@
   display: flex;
   margin-right: 110px;
   @media (max-width: 1199px) {
-    transform: translateX(0);
-    left: 34px;
-    right: 34px;
-    margin-right: 0px;
   }
 }
 .header-logo {
@@ -20,8 +16,6 @@
   width: 199px;
   height: 50px;
   @media (max-width: 1199px) {
-    transform: translateX(0);
-    margin-right: 291px;
   }
 }
 .header-nav {
@@ -34,8 +28,6 @@
   display: none;
   @media (max-width: 1199px) {
     display: block;
-    width: 30px;
-    height: 40px;
     margin-right: 30px;
   }
 }
@@ -96,20 +88,7 @@
   gap: 15px;
   display: flex;
 }
-.big-kolo {
-  z-index: 0;
-  right: 500px;
-  top: 52px;
-  position: absolute;
-  background-color: #ffa5ba;
-  width: 538px;
-  height: 538px;
-  border-radius: 50%;
-  @media (max-width: 1199px) {
-    top: 31px;
-    right: 137px;
-  }
-}
+
 .hero {
   position: relative;
   background-color: #ffb8ca;
@@ -184,6 +163,8 @@
 
 .hero-img-milk {
   margin-top: 56px;
+  @media (max-width: 1199px) {
+  }
 }
 .hero-p {
   margin-top: 112px;
@@ -201,7 +182,7 @@
   margin-top: 20px;
 }
 .header-img-girl {
-  right: 120px;
+  right: 20px;
   bottom: 0;
   position: absolute;
   @media (max-width: 1199px) {
@@ -209,50 +190,61 @@
   }
 }
 .header-img-icecream {
-  z-index: -1;
   left: 40%;
   bottom: 0;
   position: absolute;
+  @media (max-width: 1199px) {
+  }
+}
+.big-kolo {
+  left: 720px;
+  top: 52px;
+  position: absolute;
+  background-color: #ffa5ba;
+  width: 538px;
+  height: 538px;
+  border-radius: 50%;
+  @media (max-width: 1199px) {
+  }
 }
 
-.hero-list-div {
-  z-index: 1;
-  top: 0;
-  right: 0;
-  position: absolute;
-  background-color: #ffffff;
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-}
-.hero-list-li {
-  position: relative;
-}
-.hero-list-div11 {
-  width: 75px;
-  height: 100px;
-}
-.hero-list-div22 {
-  width: 75px;
-  height: 100px;
-}
-.hero-list-div1 {
-  z-index: 1;
-  top: 0;
-  right: 0;
-  position: absolute;
-  background-color: #ffffff;
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-}
 .hero-list {
   top: 0;
   right: 0;
   position: absolute;
 }
+.hero-list-li {
+  position: relative;
+}
+
+.hero-list-div1 {
+  width: 72px;
+  height: 77px;
+}
+.hero-list-div2 {
+  width: 92px;
+  height: 76px;
+}
+.white-circle1 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: #ffffff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+.white-circle2 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: #ffffff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
 .hero-list-number {
-  z-index: 2;
   position: relative;
   font-family: TitanOneRegular;
   font-style: normal;
@@ -271,7 +263,6 @@
   color: #ffffff;
 }
 .hero-list-number1 {
-  z-index: 2;
   position: relative;
   font-family: TitanOneRegular;
   font-style: normal;
