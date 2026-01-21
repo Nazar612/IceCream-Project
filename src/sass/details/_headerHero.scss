@@ -18,6 +18,9 @@
   @media (max-width: 1199px) {
     margin-right: 291px;
   }
+  @media (max-width: 767px) {
+    margin-right: 61px;
+  }
 }
 .header-nav {
   margin-right: 110px;
@@ -100,8 +103,8 @@
   background-color: #ffb8ca;
   padding-top: 108px;
   background-repeat: no-repeat;
-  // background-size: contain;
-  background-size: cover;
+  background-size: contain;
+  // background-size: cover;
 }
 .hero-container {
   position: relative;
@@ -126,7 +129,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+  @media (max-width: 767px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
+
 .hero-h1-span2 {
   font-family: TitanOneRegular;
   font-style: normal;
@@ -136,6 +144,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  @media (max-width: 767px) {
+    font-size: 48px;
+    line-height: 96.5%;
+  }
 }
 .hero-btn-red {
   font-family: dmSansRegular;
@@ -150,7 +162,14 @@
   border-radius: 20px;
   background-color: #d41443;
   border: none;
+  @media (max-width: 767px) {
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
+
 .hero-btn-white {
   width: 138px;
   height: 40px;
@@ -164,6 +183,12 @@
   background-color: #ffffff;
   display: block;
   border-radius: 20px;
+  @media (max-width: 767px) {
+    width: 83px;
+    height: 24px;
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 .img-p-objednalka {
   display: flex;
@@ -217,6 +242,10 @@
   height: 538px;
   border-radius: 50%;
   @media (max-width: 1199px) {
+  }
+  @media (max-width: 767px) {
+    width: 346px;
+    height: 344px;
   }
 }
 
