@@ -1,7 +1,32 @@
+.reviews{
+    position: relative;
+    padding-top:123px ;
+    padding-bottom: 132px;
+    
+@media(max-width:1199px) {
+    padding-top:121px;
+    padding-bottom: 119px;
+}
+
+@media(max-width: 767px) {
+    padding-top: 80px;
+    padding-bottom: 86px;
+}
+
+}
+
 .slide__container {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 926px;
     margin: 0 auto;
+
+    @media(max-width:1199px) {
+        width: 620px;
+    }
+
+    @media(max-width:767px) {
+        width: 280px;
+    }
 }
 
 .div_move {
@@ -10,8 +35,26 @@
     text-align: center;
     transform: translate(100%);
     animation: slider 20s linear;
-    animation-direction: alternate;
     animation-iteration-count: infinite;
+}
+
+.mainCheckbox {
+    position: absolute;
+    z-index: 100;
+    top: 78%; 
+    transform: translateX(-50%);
+}
+
+.checkbox1 {
+    left: 48%;
+}
+
+.checkbox2 {
+    left:50%;
+}
+
+.checkbox3 {
+    left:52% ;
 }
 
 @keyframes slider {
@@ -30,40 +73,44 @@
 
 // @keyframes slider1 {
 //     50% {
+
+    
 //         transform: translate(100%);
 //     }
 // }
 
 // @keyframes slider2 {
-//     75% {
+//     from {
+//         transform: translate(100%);
+//     }
+
+//     to {
 //         transform: translate(0%);
 //     }
 // }
 
 // @keyframes slider3 {
-//     100% {
+//     from {
+//         transform: translate(100%);
+//     }
+//     to {
 //         transform: translate(-100%);
 //     }
 // }
 
 
-// .slide__container + .checkbox1 .div_move {
-//     &:checked {
+// .slide__container .mainCheckbox:checked + .div_move{
 //          animation: slider1 1s linear;
-//     }
 // }
 
-// .slide__container .checkbox2 + .div_move {
-//     &:checked {
-//          animation: slider2 1s linear;
-//     }
+// .slide__container .mainCheckbox:checked + .div_move{
+//          animation:  slider3 1s linear;
 // }
 
-// .checkbox3 {
-//     &:checked {
+// .slide__container .mainCheckbox:checked + .div_move{
 //          animation: slider3 1s linear;
-//     }
 // }
+
 
 .avatar1 {
     display: block;
@@ -75,11 +122,26 @@
     display: flex;
     gap: 10px;
     margin-bottom: 34px;
+    @media(max-width:1199px) {
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:767px) {
+     margin-bottom:24px
+    }
 }
 
 .reviews__info {
     text-align: center;
-    margin-bottom: 35px;
+    font-family: dmSansMedium;
+    font-size: 16px;
+    @media (max-width:1199px) {
+        font-size: 14px;
+    }
+
+    @media (max-width:1199px) {
+        font-size: 12px;
+    }
 }
 
 .reviews_svglist {
@@ -89,14 +151,45 @@
 
 .avatar1 {
     margin-bottom: 15px;
+
+    @media (max-width:1199px) {
+        margin-bottom: 19px;
+    }
+
+    @media (max-width:767px) {
+        margin-bottom: 29px;
+    }
+    
 }
 
 .review {
     width: 926px;
     padding-top:46px ;
     padding-bottom:39px ;
-    background-color: #E1E1E1;
+    background-color: #FAFAFA;
+    padding-left:50px;
+    padding-right:54px;
+
+    
+    @media (max-width:1199px) {
+    padding-right:36px;
+    padding-left:60px;
+    padding-top:47px;
+    padding-bottom:28px;
+    width: 620px;
+    }
+
+    
+    @media (max-width:767px) {
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom:20px;
+    padding-top:43px;
+    width: 280px;
+    }
 }
+
+
 
 .review__text {
 font-family: dmSansMedium;
@@ -106,8 +199,19 @@ font-size: 16px;
 line-height: 186%;
 text-align: center;
 letter-spacing: 0.04em;
+width: 822px;
 
-color: #000000;
+background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
+
+ @media (max-width:1199px) {
+    font-size: 14px;
+    width: 460px;
+    }
+
+     @media (max-width:767px) {
+    font-size: 12px;
+    width: 157px;
+    }
 }
 
 .list_item_span {
