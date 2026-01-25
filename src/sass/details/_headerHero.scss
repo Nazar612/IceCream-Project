@@ -1,3 +1,123 @@
+@media (min-width: 1200px) {
+  .mobilewindow,
+  .menu-overlay {
+    display: none;
+  }
+}
+
+.mobilewindow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #e17992;
+  z-index: 1001;
+
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+
+  display: block;
+}
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.mobilewindow.active {
+  transform: translateX(0);
+}
+.mobilewindow-box {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 171px;
+}
+.mobilewindow-btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  width: 159px;
+  height: 44px;
+  border-radius: 22px;
+  border: 0px;
+}
+.mobilewindow-btn-text {
+  font-family: dmSansRegular;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #d41443;
+}
+.mobilewindow-btn-svg {
+  width: 4px;
+  height: 8px;
+}
+.mobilewindow-close {
+  right: 28px;
+  top: 23px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  color: #ffffff;
+  background: none;
+  border: 0px;
+}
+.mobilewindow-list-li1 {
+  border-bottom: 1px solid #e18298;
+  width: 100%;
+}
+.mobilewindow-list-li2 {
+  border-top: 1px solid #e18298;
+  width: 100%;
+}
+.mobilewindow-list-a {
+  margin-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-family: 'dmSansRegular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+.mobilewindow-list-a1 {
+  color: #d41443;
+}
+.mobilewindow-list-a2 {
+  color: #ffffff;
+}
+.mobilewindow-list-a3 {
+  color: #ffffff;
+}
+.mobilewindow-list-a4 {
+  color: #ffffff;
+}
+.mobilewindow-list-a5 {
+  color: #ffffff;
+}
 .header {
   z-index: 1;
   top: 38px;
