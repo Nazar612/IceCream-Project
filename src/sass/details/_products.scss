@@ -85,3 +85,18 @@ margin-bottom: 127px;
 padding-bottom: 49px;
 
 }
+
+@media (max-width: 767px) {
+    .prd-phone {
+        height: 280px; 
+        
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .prd-tablet {
+        height: 220px;
+        
+    }
+}
