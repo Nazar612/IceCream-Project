@@ -4,7 +4,10 @@
     display: none;
   }
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 .mobilewindow {
   position: fixed;
   top: 0;
