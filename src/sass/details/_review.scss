@@ -34,8 +34,10 @@
     justify-content: center;
     text-align: center;
     transform: translate(100%);
-    animation: slider 20s linear;
-    animation-iteration-count: infinite;
+    // animation: slider 20s linear;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate;
+    transition: transform 750ms linear;
 }
 
 .mainCheckbox {
@@ -43,10 +45,38 @@
     z-index: 100;
     top: 78%; 
     transform: translateX(-50%);
+
+    &::after {
+        content: "";
+        display: block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #E1E1E1;
+        transition: box-shadow 250ms linear;
+    }
+
+    &:checked::after {
+        background-color: #C7133E;
+        box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.75);
+    }
+
+    @media (max-width:1199px) {
+        top: 87%;
+    }
 }
 
 .checkbox1 {
     left: 48%;
+    @media (max-width:1199px) {
+        left: 46%;
+    }
+
+    @media (max-width:767px) {
+        left: 44%;
+    }
 }
 
 .checkbox2 {
@@ -55,61 +85,16 @@
 
 .checkbox3 {
     left:52% ;
-}
 
-@keyframes slider {
-     50% {
-        transform: translate(100%);
+    @media (max-width:1199px) {
+        left: 54%;
     }
 
-    75% {
-        transform: translate(0%);
-    }
-
-     100% {
-        transform: translate(-100%);
+    @media (max-width:767px) {
+        left: 56%;
     }
 }
 
-// @keyframes slider1 {
-//     50% {
-
-    
-//         transform: translate(100%);
-//     }
-// }
-
-// @keyframes slider2 {
-//     from {
-//         transform: translate(100%);
-//     }
-
-//     to {
-//         transform: translate(0%);
-//     }
-// }
-
-// @keyframes slider3 {
-//     from {
-//         transform: translate(100%);
-//     }
-//     to {
-//         transform: translate(-100%);
-//     }
-// }
-
-
-// .slide__container .mainCheckbox:checked + .div_move{
-//          animation: slider1 1s linear;
-// }
-
-// .slide__container .mainCheckbox:checked + .div_move{
-//          animation:  slider3 1s linear;
-// }
-
-// .slide__container .mainCheckbox:checked + .div_move{
-//          animation: slider3 1s linear;
-// }
 
 
 .avatar1 {
@@ -144,10 +129,6 @@
     }
 }
 
-.reviews_svglist {
-    margin: 0 auto;
-    display: flex;
-}
 
 .avatar1 {
     margin-bottom: 15px;
@@ -196,8 +177,8 @@ font-family: dmSansMedium;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 186%;
-text-align: center;
+line-height: 30px;
+margin: 0 auto;
 letter-spacing: 0.04em;
 width: 822px;
 
@@ -217,5 +198,30 @@ background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent
 .list_item_span {
     font-size: 32px;
 color: #C7133E;
-
 }
+
+#slide3:checked ~ .div_move {
+    transform:translateX(-100%);
+}
+
+#slide2:checked ~ .div_move {
+    transform:translateX(0%)
+}
+
+#slide1:checked ~ .div_move {
+    transform:translateX(100%)
+}
+
+// .reviews_svglist {
+//     justify-content: center;
+//     display: flex;
+//     gap: 10px;
+//     margin-top: 15px;
+// }
+
+// .review_label_point {
+//     width: 12px;
+//     height:12px;
+//     border-radius:50%;
+//     background-color: #D9D9D9;
+// }
