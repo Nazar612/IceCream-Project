@@ -485,7 +485,7 @@ body {
 }
 .white-circle2 {
   top: 0;
-  right: 20px;
+  right: 0;
   position: absolute;
   background-color: #ffffff;
   width: 33px;
@@ -494,7 +494,6 @@ body {
   @media (max-width: 1199px) {
     width: 16px;
     height: 16px;
-    right: 8px;
   }
 }
 
