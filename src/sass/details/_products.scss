@@ -15,6 +15,33 @@ text-transform: uppercase;
 color: #FFA5BA;
 
 margin-bottom: 15px;
+@media (max-width:1199px){
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 30px;
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFA5BA;
+
+
+}
+
+@media (max-width:767px){
+
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFA5BA;
+
+
+}
 }
 
 .products_h1 {
@@ -29,6 +56,35 @@ text-transform: uppercase;
 color: #D41443;
 
 margin-bottom: 259px;
+@media (max-width:1199px){
+
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+margin-bottom: 150px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #D41443;
+
+
+}
+@media (max-width:767px){
+
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 39px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+margin-bottom: 144px;
+color: #D41443;
+
+
+}
 }
 
 .products-list {
@@ -38,7 +94,23 @@ margin-bottom: 259px;
     gap: 24px;
     text-align: center;
     margin: 0 auto;
+    @media (max-width: 1199px){
+      grid-template-columns: 220px 220px 220px;
+      gap: 20px;
+      grid-row: 485px;
+
+
+    }
+    @media (max-width: 767px){
+      grid-template-columns: 280px;
+      gap: 130px;
+      grid-row: 485px;
+      justify-content: center;
+
+    }
+    
 }
+
 
 .products-list-li {
     padding-bottom: 50px;
@@ -50,6 +122,7 @@ margin-bottom: 259px;
     border-radius: 24px;
     position: relative;
 }
+
 
 .products-list-li1 {
     background-color: #FFB8CA;
@@ -67,6 +140,22 @@ margin-bottom: 259px;
     position: absolute;
     top: -40%;
     left: 0;
+    @media (max-width: 1199px){
+      width: 220px;
+      height: 233px;
+      top: -20%;
+      left: 50% ;
+      transform: translateX(-50%);
+
+
+    }
+    @media (max-width: 767px){
+      width: 249px;
+      height: 252px;
+      top: -20% ;
+      
+      
+    }
 }
 
 .productsList__h2 {
@@ -78,6 +167,38 @@ font-size: 30px;
 line-height: 34px;
 letter-spacing: 0.04em;
 text-transform: uppercase;
+@media (max-width:1199px){
+
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+}
+@media (max-width:767px){
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+}
 }
 
 .productsList__h2Points {
@@ -115,3 +236,4 @@ margin-bottom: 62px;
         cursor: pointer;
     }
 }
+
