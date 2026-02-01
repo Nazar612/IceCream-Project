@@ -1,16 +1,16 @@
 .reviews{
     position: relative;
     padding-top:123px ;
-    padding-bottom: 132px;
+    padding-bottom: 234px;
     
 @media(max-width:1199px) {
     padding-top:121px;
-    padding-bottom: 119px;
+    padding-bottom: 197px;
 }
 
 @media(max-width: 767px) {
     padding-top: 80px;
-    padding-bottom: 86px;
+    padding-bottom: 170px;
 }
 
 }
@@ -43,7 +43,7 @@
 .mainCheckbox {
     position: absolute;
     z-index: 100;
-    top: 78%; 
+    top: 70%; 
     transform: translateX(-50%);
 
     &::after {
@@ -64,7 +64,11 @@
     }
 
     @media (max-width:1199px) {
-        top: 87%;
+        top: 75%;
+    }
+
+    @media (max-width:767px) {
+        top: 80%;
     }
 }
 
