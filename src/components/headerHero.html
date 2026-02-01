@@ -1,9 +1,43 @@
+<div class="menu-overlay"></div>
 <header class="header">
+
+
+
+<picture>
+  <source
+    srcset="
+      ../assets/img/desktop/x1/desktopLogoX1.webp 1x,
+      ../assets/img/desktop/x2/desktopLogoX2.webp 2x,
+      ../assets/img/desktop/x3/desktopLogoX3.webp 3x
+    "
+    media="(min-width: 1200px)"
+  />
+
+  <source
+    srcset="
+      ../assets/img/tablet/x1/tabletLogoX1.webp 1x,
+      ../assets/img/tablet/x2/tabletLogoX2.webp 2x,
+      ../assets/img/tablet/x3/tabletLogoX3.webp 3x
+    "
+    media="(min-width: 768px)"
+  />
+
+  <source
+    srcset="
+      ../assets/img/phone/x1/phoneLogoX1.webp 1x,
+      ../assets/img/phone/x2/phoneLogoX2.webp 2x,
+      ../assets/img/phone/x3/phoneLogoX3.webp 3x
+    "
+    media="(max-width: 767px)"
+  />
+
   <img
     class="header-logo"
-    src="../assets/img/desktop/x1/desktopLogoX1.webp"
-    alt=""
+    src="../assets/img/phone/x1/phoneLogoX1.webp"
+    alt="Logo"
   />
+</picture>
+
   <nav class="header-nav">
     <ul class="header-nav-list">
       <li class="header-list-li header-li-color2">
@@ -23,6 +57,25 @@
       </li>
     </ul>
   </nav>
+
+
+
+
+
+
+
+
+  <svg class="header-burger">
+    <use href="../assets/svg/burger.svg#icon-Burger"></use>
+  </svg>
+
+
+
+
+
+
+
+
   <button class="header-btn">
     <span class="header-btn-text">Buy now</span>
     <svg class="header-btn-svg">
@@ -33,42 +86,103 @@
 
 <main>
   <section class="hero">
+
+
+
+
+
+
+
+
+
+
+      <div class="big-kolo"></div>
     <div class="hero-container">
+      
       <h1 class="hero-h1">
-        <span class="hero-h1-span1">ice cream <br />made with</span>
-        <br />
+        <span class="hero-h1-span1">ice cream made with</span>
         <span class="hero-h1-span2">PASSION</span>
       </h1>
       <div class="header-button-div">
         <button class="hero-btn-red">Products</button>
         <button class="hero-btn-white">How it’s made?</button>
       </div>
-      <picture>
-        <source
-          srcset="
-            ../assets/img/desktop/x1/desktopJugMilkX1.webp 1x,
-            ../assets/img/desktop/x2/desktopJugMilkX2.webp 2x,
-            ../assets/img/desktop/x3/desktopJugMilkX3.webp 3x
-          "
-        />
-        <img
-          class="hero-img-milk"
-          src="../assets/img/desktop/x1/desktopJugMilkX1.webp"
-          alt=""
-        />
-      </picture>
+      <div class="img-p-objednalka">
 
-      <p class="hero-p">
-        Lorem ipsum dolor sit amet, <br />
-        consectetur adipiscing elit, <br />
-        sed do eiusmod tempor <br />
-        incididunt ut labore et
-      </p>
-      <img
-        class="hero-img-arrow"
-        src="../assets/img/general/x1/arrowRightX1.webp"
-        alt=""
-      />
+
+
+
+
+
+        <picture>
+
+          <source
+            srcset="
+              ../assets/img/desktop/x1/desktopJugMilkX1.webp 1x,
+              ../assets/img/desktop/x2/desktopJugMilkX2.webp 2x,
+              ../assets/img/desktop/x3/desktopJugMilkX3.webp 3x
+            "
+            media="(min-width:1200px)"
+          />
+
+          <source
+          srcset="
+          ../assets/img/tablet/x1/tabletJugMilkX1.webp 1x,
+          ../assets/img/tablet/x2/tabletJugMilkX2.webp 2x,
+          ../assets/img/tablet/x3/tabletJugMilkX3.webp 3x
+          "
+          media="(min-width:768px)"
+          />
+
+          <img
+            class="hero-img-milk"
+            src="../assets/img/desktop/x1/desktopJugMilkX1.webp"
+            alt=""
+          />
+        </picture>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="p-arrow-objednalka">
+          <p class="hero-p">
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit, <br />
+            sed do eiusmod tempor <br />
+            incididunt ut labore et
+          </p>
+          <img
+            class="hero-img-arrow"
+            src="../assets/img/general/x1/arrowRightX1.webp"
+            alt=""
+          />
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <picture>
         <source
           srcset="
@@ -76,13 +190,39 @@
             ../assets/img/desktop/x2/desktopPassionIceCreamX2.webp 2x,
             ../assets/img/desktop/x3/desktopPassionIceCreamX3.webp 3x
           "
+          media="(min-width:1200px)"
         />
+        <source
+        srcset="
+        ./../assets/img/tablet/x1/tabletPassionIceCreamX1.webp 1x,
+        ./../assets/img/tablet/x2/tabletPassionIceCreamX2.webp 2x,
+        ./../assets/img/tablet/x3/tabletPassionIceCreamX3.webp
+        "
+        media="(min-width:768px)"
+        >
+        <source
+        srcset="
+        ../assets/img/phone/x1/phonePassionIceCreamX1.webp 1x,
+        ../assets/img/phone/x2/phonePassionIceCreamX2.webp 2x,
+        ../assets/img/phone/x3/phonePassionIceCreamX3.webp 3x
+        "
+        media="(max-width:767px)"
+        >
         <img
           class="header-img-icecream"
           src="../assets/img/desktop/x1/desktopPassionIceCreamX1.webp"
           alt=""
         />
       </picture>
+
+
+
+
+
+
+
+
+
 
       <picture>
         <source
@@ -91,29 +231,88 @@
             ../assets/img/desktop/x2/desktopSooTastyX2.webp 2x,
             ../assets/img/desktop/x3/desktopSooTastyX3.webp 3x
           "
+          media="(min-width: 1200px)"
         />
+        <source srcset="
+        ../assets/img/tablet/x1/tabletSooTastyX1.webp 1x,
+        ../assets/img/tablet/x2/tabletSooTastyX2.webp 2x,
+        ../assets/img/tablet/x3/tabletSooTastyX3.webp 3x
+        "
+        media="(min-width: 768px)"
+        >
 
         <img
           class="header-img-girl"
           src="../assets/img/desktop/x1/desktopSooTastyX1.webp"
           alt=""
         />
+        
       </picture>
-      `
+
+
+
+
+
+
+
+
       <ul class="hero-list">
+
+        
+
         <li class="hero-list-li">
+                  <div class="white-circle1"></div>
           <p class="hero-list-number">16</p>
         </li>
         <li class="hero-list-li">
           <p class="hero-list-text">cafes</p>
         </li>
+
+        
+ 
         <li class="hero-list-li">
-          <p class="hero-list-number">23</p>
+          <div class="white-circle2"></div>
+          <p class="hero-list-number1">23</p>
         </li>
         <li class="hero-list-li">
-          <p class="hero-list-text">food trucks</p>
+          <p class="hero-list-text1">food trucks</p>
         </li>
+
       </ul>
-    </div>
   </section>
 </main>
+
+<div class="mobilewindow">
+  <div class="mobilewindow-box">
+
+  <button class="mobilewindow-btn">
+    <span class="mobilewindow-btn-text">Buy now</span>
+    <svg class="mobilewindow-btn-svg">
+      <use href="../assets/svg/symbol-defs.svg#icon-arrowSVG"></use>
+    </svg>
+  </button>
+    <button class="mobilewindow-close">X</button>
+    <nav class="mobilewindow-nav">
+    <ul class="mobilewindow-nav-list">
+      <li class="mobilewindow-list-li mobilewindow-list-li1 ">
+        <a class="mobilewindow-list-a mobilewindow-list-a1" href="">Home</a>
+      </li>
+
+
+      <li class="mobilewindow-list-li mobilewindow-list-li2  ">
+        <a class="mobilewindow-list-a mobilewindow-list-a2" href="">About us</a>
+      </li>
+      <li class="mobilewindow-list-li mobilewindow-list-li2  ">
+        <a class="mobilewindow-list-a mobilewindow-list-a3" href="">How it’s made?</a>
+      </li>
+      <li class="mobilewindow-list-li mobilewindow-list-li2  ">
+        <a class="mobilewindow-list-a mobilewindow-list-a4" href="">Our products</a>
+      </li>
+      <li class="mobilewindow-list-li mobilewindow-list-li2  ">
+        <a class="mobilewindow-list-a mobilewindow-list-a5" href="">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
+  </div>
+</div>
