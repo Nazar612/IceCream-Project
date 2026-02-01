@@ -1,0 +1,117 @@
+.products {
+    padding-top:127px ;
+    padding-bottom:119px ;
+}
+
+.products_h2 {
+font-family: TitanOneRegular;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 34px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFA5BA;
+
+margin-bottom: 15px;
+}
+
+.products_h1 {
+font-family: TitanOneRegular;
+font-style: normal;
+font-weight: 400;
+font-size: 58px;
+line-height: 66px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #D41443;
+
+margin-bottom: 259px;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: 335px 335px 335px;
+    grid-row: 525px;
+    gap: 24px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.products-list-li {
+    padding-bottom: 50px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 162px;
+
+    color: white;
+    border-radius: 24px;
+    position: relative;
+}
+
+.products-list-li1 {
+    background-color: #FFB8CA;
+}
+
+.products-list-li2 {
+    background-color: #F0D1A5;
+}
+
+.products-list-li3 {
+    background-color: #C2E297;
+}
+
+.productsList__img {
+    position: absolute;
+    top: -40%;
+    left: 0;
+}
+
+.productsList__h2 {
+
+font-family: TitanOneRegular;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 34px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+}
+
+.productsList__h2Points {
+    margin-bottom: 32px;
+    margin-top: 32px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.productsList__h4Lorem {
+font-family: dmSansRegular;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.04em;
+margin-bottom: 62px;
+}
+
+.products-button {
+    background-color: white;
+    border-radius:50%;
+    height: 40px;
+    width: 40px;
+    color: #D41443;
+    font-family: dmSansRegular;
+    border: none;
+    font-size: 20px;
+    transition: color 250ms linear;
+    transition: background-color 250ms linear;
+    &:hover {
+        background-color:rgb(226, 226, 226);
+        color: #c4123e;
+        cursor: pointer;
+    }
+}
