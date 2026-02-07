@@ -7,7 +7,7 @@
   padding-right: 44px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  // margin: 10px;
   font-family: 'DM Sans', sans-serif;
 }
 @media (max-width: 1199px) {
@@ -20,7 +20,7 @@
     padding-right: 32px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    // margin: 10px;
     font-family: 'DM Sans', sans-serif;
   }
 }
@@ -179,13 +179,15 @@ hr {
 
 .flexbox {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  gap: 29px;
   justify-content: center;
   transform: translateY(-15%);
 }
 @media (max-width: 1199px) {
   .flexbox {
     transform: translateY(-10%);
+    gap: 20px;
   }
 }
 @media (max-width: 767px) {
